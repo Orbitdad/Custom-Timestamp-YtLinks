@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Yt_link_with_timestamp</title>
+</head>
+
+<body>
+    <main>
+        <div class="heading">
+            <h1>Generate Custom Timestamped YouTube Links</h1>
+        </div>
+        
+        <div class="main-container">
+            <div class="userInput">
+                <input type="text" name="userInput" id="userInput" placeholder="Insert URL here...">
+            </div>
+
+
+            <div class="linkProcessing">
+                <div class="timeHolder">
+                    <h1>Timestamp:</h1>
+
+                    <div class="time">
+                        <input type="number" name="hour" id="hour" min="0" placeholder="Hours" maxlength="2">
+                        <input type="number" name="minutes" id="minutes" min="0" max="60" placeholder="Minutes"
+                            maxlength="2">
+                        <input type="number" name="seconds" id="seconds" min="0" max="60" placeholder="Seconds"
+                            maxlength="2">
+                    </div>
+                </div>
+                <div class="buttonHolder">
+                    <button type="submit" onclick="returnText()">Submit</button>
+                    <button type="reset" onclick="resetForm()">Reset</button>
+                </div>
+
+                <div class="output">
+                    <div id="mini-loader">
+                    </div>
+                    <div id="outputURL">
+                        <p>Click to copy the link</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+                 <div class="meme">
+            <img src="./Assect.gif" alt="😁" class="float-img">
+        </div>
+    </main>
+</body>
+<script src="Script.js"></script>
+
+</html>
